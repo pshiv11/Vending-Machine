@@ -1,0 +1,64 @@
+package vendingmachine.dao;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import vendingmachine.dto.Item;
+
+public class VendingMachineDaoFileImpl implements VendingMachineDao {
+	
+	private static String INVENTORY;
+	private Map<Integer, Item> items = new HashMap<>();
+	
+
+	@Override
+	public Item additem(int id, Item item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item removeItem(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item getItem(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item updateItemInventory(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Item> getAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	private void loadInventory() {
+		Scanner scan;
+		
+		try {
+			scan = new Scanner(new BufferedReader(new FileReader(INVENTORY)));
+		}catch(FileNotFoundException e) {
+			System.out.println("Could not load inventory");
+		}
+		
+		String itemAstext;
+		while(scan.hasNextLine()) {
+			itemAstext = scan.nextLine();
+		}
+	}
+
+}

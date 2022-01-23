@@ -1,0 +1,41 @@
+package vendingmachine.dao;
+
+import java.util.List;
+
+import vendingmachine.dto.Item;
+
+public class VendingMachineDaoFileImpl implements VendingMachineDao {
+	
+	private static String INVENTORY;
+
+	@Override
+	public Item additem(int id, Item item) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item removeItem(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item getItem(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Item updateItemInventory(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Item> getAllItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
